@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DF1E31721ECF0CE006C04F2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1E31621ECF0CE006C04F2 /* main.swift */; };
+		4D757D4021ECF5B50000BE73 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D757D3F21ECF5B50000BE73 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D757D3F21ECF5B50000BE73 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4DF1E31321ECF0CE006C04F2 /* fontwrangler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fontwrangler; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DF1E31621ECF0CE006C04F2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4DF1E31D21ECF17E006C04F2 /* COPYRIGHT */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		4DF1E31E21ECF187006C04F2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = "<none>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,8 @@
 		4DF1E30A21ECF0CE006C04F2 = {
 			isa = PBXGroup;
 			children = (
+				4DF1E31D21ECF17E006C04F2 /* COPYRIGHT */,
+				4DF1E31E21ECF187006C04F2 /* README.md */,
 				4DF1E31521ECF0CE006C04F2 /* fontwrangler */,
 				4DF1E31421ECF0CE006C04F2 /* Products */,
 			);
@@ -57,7 +61,7 @@
 		4DF1E31521ECF0CE006C04F2 /* fontwrangler */ = {
 			isa = PBXGroup;
 			children = (
-				4DF1E31621ECF0CE006C04F2 /* main.swift */,
+				4D757D3F21ECF5B50000BE73 /* main.swift */,
 			);
 			path = fontwrangler;
 			sourceTree = "<group>";
@@ -94,6 +98,7 @@
 				TargetAttributes = {
 					4DF1E31221ECF0CE006C04F2 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -119,7 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DF1E31721ECF0CE006C04F2 /* main.swift in Sources */,
+				4D757D4021ECF5B50000BE73 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,8 +249,15 @@
 		4DF1E31B21ECF0CE006C04F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -253,7 +265,13 @@
 		4DF1E31C21ECF0CE006C04F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
