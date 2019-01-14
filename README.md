@@ -1,4 +1,4 @@
-#fontwrangler - Command-line Font Category Creation in macOS
+# fontwrangler - Command-line Font Category Creation in macOS
 
 This is a quick console application in Swift that creates a new font category
 and adds selected fonts. macOS doesn't seem to have a command-line utility that
