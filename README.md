@@ -19,5 +19,4 @@ The results should look something like this in the UI:
 
 ![Screenshot](screenshot.png)
 
-I'm unfamiliar with Swift, so if there's any glaring errors or if the code looks
-scary, you know why.
+I was unfamiliar with Swift when I wrote this, but it's not too horid (writing this 2 years later). Feel free to harrass me about anything that needs changing!
